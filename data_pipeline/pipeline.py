@@ -9,7 +9,7 @@ def read_large_dataset(file_name: str) -> Generator:
 
 def split_lines(file_generator: Generator):
     print("Split Lines Generator: ", type(file_generator))
-    """Splitte Zeilen in eine Liste (kommasepariert)
+    """Splitte Zeilen in eine Liste (kommasepariert)--
     lifelock,LifeLock,,web,Tempe,AZ,1-May-07,6850000,USD,b
     """
     result = (line.strip().split(',') for line in file_generator)
